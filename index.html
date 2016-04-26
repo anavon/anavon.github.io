@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana von Huben</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+	<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">		
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	
+<script>
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = $('header').outerHeight();
+
+	$(window).scroll(function(event){
+	    didScroll = true;
+	});
+
+	setInterval(function() {
+	    if (didScroll) {
+	        hasScrolled();
+	        didScroll = false;
+	    }
+	}, 250);
+
+	function hasScrolled() {
+	    var st = $(this).scrollTop();
+    
+	    // Make sure they scroll more than delta
+	    if(Math.abs(lastScrollTop - st) <= delta)
+	        return;
+    
+	    // If they scrolled down and are past the navbar, add class .nav-up.
+	    // This is necessary so you never see what is "behind" the navbar.
+	    if (st > lastScrollTop && st > navbarHeight){
+	        // Scroll Down
+	        $('header').removeClass('nav-down').addClass('nav-up');
+	    } else {
+	        // Scroll Up
+	        if(st + $(window).height() < $(document).height()) {
+	            $('header').removeClass('nav-up').addClass('nav-down');
+	        }
+	    }
+    
+	    lastScrollTop = st;
+	}
+	</script>
+
+	<script>
+	$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+  </head>
+  <!--<body style="background-image:url(img/coveridea5.jpg); padding-left:12%; padding-right:12%;">-->
+<body style="background-image:url(img/background.jpg);">
+	
+<header class="nav-down">	
+	<div class="box fade-in one"> 
+		<div style="padding:10px; border:solid; border-color:#957f3c;"><a href="index.html"><img class="logo" src="img/analogo-03.png"> </a> 
+		</div>
+	   <a href="#work" style="font-size: 10pt;
+	     	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
+	     	letter-spacing: 2px;">
+			<div class="navlink">WORK</a>
+  	  	  	</div>
+	  <a href="#contact" style="font-size: 10pt;
+	  	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
+	  	letter-spacing: 2px;">
+		<div class="navlink">ABOUT</a>
+	   	</div>
+	</div>
+</header>
+
+<div class="box fade-in one" style="width:100%; height:100%; margin-bottom:0%; background-image:url(img/background2.jpg);background-repeat:no-repeat; background-size:cover;">
+	<div class="row" style="padding-top:300px; text-align:center; color:#FFFFFF;">
+	<h1 style="letter-spacing:20px; line-height:1.5; ">ANA VON HUBEN</h1><p style="color:#957f3c;font-size:18px"><em><br/><br/><a href="#work">view work</em><br/><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
+	</div>	
+</div>
+	
+<a name="work"></a>&nbsp</br>&nbsp</br>&nbsp<br/>&nbsp
+    
+<div class="large-12 small-12" style="padding-top:0px; padding-left:15%; padding-right:15%; padding-bottom:10px;text-align:center; color:#121212; float:center"> 
+	        
+<a href="nota.html">
+<div class="box fade-in two">
+	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<div class="image-wrapper overlay-slide-in-left">
+		 <img src="img/thumbnail-nota.jpg">
+		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">NOTA</h6>
+			<em>art direction, editorial, illustration</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
+			</div>
+		</div>
+	 </div>
+</div>
+</a>
+
+<a href="pi.html">
+<div class="box fade-in two">
+	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<div class="image-wrapper overlay-slide-in-left">
+		 <img src="img/thumbnail-pi.jpg">
+		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">LIFE OF PI</h6>
+			<em>illustration, cover design</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
+			</div>
+		</div>
+	 </div>
+</div>
+</a>
+
+<a href="we.html">
+<div class="box fade-in two">
+	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<div class="image-wrapper overlay-slide-in-left">
+		 <img src="img/thumbnail-we.jpg">
+		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">WORLD ENDEAVORS</h6>
+			<em>print campaign, editorial
+</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
+			</div>
+		</div>
+	 </div>
+</div>
+</a>
+
+         
+<a href="day.html">
+<div class="box fade-in two">
+	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<div class="image-wrapper overlay-slide-in-left">
+		 <img src="img/Daiya_March17_Smoothie_FB.jpg">
+		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">DAIYA</h6>
+			<em>digital content marketing,<br/> html newsletter</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
+			</div>
+		</div>
+	 </div>
+</div>
+</a>
+
+<a href="gallery.html">
+<div class="box fade-in two">
+	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<div class="image-wrapper overlay-slide-in-left">
+		 <img src="img/halfproject-gallery2.jpg">
+		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">GALLERY EVENTS</h6>
+			<em>poster design, social media</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
+			</div>
+		</div>
+	 </div>
+</div>
+</a>
+
+<a href="alb.html">
+<div class="box fade-in two">
+	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<div class="image-wrapper overlay-slide-in-left">
+		 <img src="img/thumbnail-alb.jpg">
+		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">ALBATROSS TRAVEL</h6>
+			<em>web design, branding</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
+			</div>
+		</div>
+	 </div>
+</div>
+</a>
+
+
+         
+<a href="idea.html">
+<div class="box fade-in two">
+	<div class= "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<div class="image-wrapper overlay-slide-in-left">
+		 <img src="img/thumbnail-idea.jpg">
+		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">THE IDEA CHALLENGE</h6>
+			<em>digital and print campaign, illustration</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
+			</div>
+		</div>
+	 </div>
+</div>
+</a>
+
+<a href="winwood.html">
+<div class="box fade-in two">
+	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<div class="image-wrapper overlay-slide-in-left">
+		 <img src="img/thumbnail-win.jpg">
+		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">WINWOOD PROPERTIES</h6>
+			<em>logo design, branding</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
+			</div>
+		</div>
+	 </div>
+</div>
+</a>
+
+<a href="etc.html">
+<div class="box fade-in two">
+	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<div class="image-wrapper overlay-slide-in-left">
+		 <img src="img/etc-03.jpg">
+		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">ETC.</h6>
+			<em>other design + illustration projects</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
+			</div>
+		</div>
+	 </div>
+</div>
+</a>
+
+</div>				
+<div class="row">	&nbsp </div>	
+ 
+<p/>
+<p/>
+  
+  
+  	        <!-- ... -->
+  	    </div>
+  	</div>
+	  
+	  
+<div class="box fade-in three"><a name="contact"> </a>
+	<div style="width:100%; text-align:left; color:#bdbdc6; background-color:#252429; padding-top: 50px; padding-bottom:50px;">
+	 		<div class="row">
+	         	<div class="large-12 columns" style="padding-left: 5%; padding-right:5%"><p>
+	         	   <h5 style="line-height:1.5">LET'S EXPLORE NEW IDEAS TOGETHER.</h5><br>
+	               <p> 
+I'm Ana von Huben, and I'm a designer with three years experience working in both print and digital media, and I'm always looking for new opportunities to create something exciting and meaningful. Present and past clients and collaborators include Haberman, World Endeavors, Eau Claire Area Economic Development Corporation, NOTA Creative Culture Journal, Feed My People Food Bank, Volume One Magazine, Winwood Properties, and University of Wisconsin - Eau Claire.<p/>
+	 Email: ana.vonhuben@gmail.com 
+	 <br/><br/>
+	      
+  		<a href="#contact" style="font-size: 10pt;
+  	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
+  	letter-spacing: 2px;">
+					<div class="navlink" style="width:148px;">VIEW RESUME
+   				 	</div></a>
+	           </div>
+	 		  </div>
+	 	  </div>
+	  </div>
+
+	     <script src="js/vendor/jquery.min.js"></script>
+	     <script src="js/vendor/what-input.min.js"></script>
+	     <script src="js/foundation.min.js"></script>
+	     <script src="js/app.js"></script>
+	   </body>
+	 </html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+     <meta charset="utf-8" />
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Ana von Huben</title>
+     <link rel="stylesheet" href="css/foundation.css" />
+     <link rel="stylesheet" href="css/app.css" />
+ 	<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+ 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700italic' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">		
+	
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	
+ <script>
+ 	var didScroll;
+ 	var lastScrollTop = 0;
+ 	var delta = 5;
+ 	var navbarHeight = $('header').outerHeight();
+
+ 	$(window).scroll(function(event){
+ 	    didScroll = true;
+ 	});
+
+ 	setInterval(function() {
+ 	    if (didScroll) {
+ 	        hasScrolled();
+ 	        didScroll = false;
+ 	    }
+ 	}, 250);
+
+ 	function hasScrolled() {
+ 	    var st = $(this).scrollTop();
+    
+ 	    // Make sure they scroll more than delta
+ 	    if(Math.abs(lastScrollTop - st) <= delta)
+ 	        return;
+    
+ 	    // If they scrolled down and are past the navbar, add class .nav-up.
+ 	    // This is necessary so you never see what is "behind" the navbar.
+ 	    if (st > lastScrollTop && st > navbarHeight){
+ 	        // Scroll Down
+ 	        $('header').removeClass('nav-down').addClass('nav-up');
+ 	    } else {
+ 	        // Scroll Up
+ 	        if(st + $(window).height() < $(document).height()) {
+ 	            $('header').removeClass('nav-up').addClass('nav-down');
+ 	        }
+ 	    }
+    
+ 	    lastScrollTop = st;
+ 	}
+ 	</script>
+
+ 	<script>
+ 	$(function() {
+   $('a[href*="#"]:not([href="#"])').click(function() {
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+       if (target.length) {
+         $('html, body').animate({
+           scrollTop: target.offset().top
+         }, 1000);
+         return false;
+       }
+     }
+   });
+ });
+ </script>
+   </head>
+
+<body>
+	<header class="nav-down">	
+		<div class="box fade-in three"> 
+			<div style="padding:10px; border:solid; border-color:#957f3c;"><a href="index.html"><img class="logo" src="img/analogo-03.png"> </a> 
+			</div>
+		   <a href="index.html#work" style="font-size: 10pt;
+		     	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
+		     	letter-spacing: 2px;">
+				<div class="navlink">WORK</a>
+	  	  	  	</div>
+		  <a href="index.html#contact" style="font-size: 10pt;
+		  	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
+		  	letter-spacing: 2px;">
+			<div class="navlink">ABOUT</a>
+		   	</div>
+		</div>
+	</header>
+
+<div class="box fade-in one" style="width:100%; height:75%; padding-top:0px; z-index:0; background-image:url(img/banner-alb1.jpg);background-repeat:no-repeat; background-size:cover;">
+</div>	
+
+<div class="box fade-in one"style="width:100%; padding-bottom:0px; background-color:#FFFFFFF">
+	<div class="row" style="padding-top:50px; padding-bottom:0px; text-align:center;">
+	<h1> ALBATROSS TRAVEL </h1> <p/>
+	 		  <p class="italictext" style="font-size:120%; padding-top:5px;"><br/> branding, web design</p><br/><p><img src="img/pin-03.png" style="width:40px"></p>
+	</div>	
+</div>
+	
+	<div class="box fade-in one"> 
+		
+		<div class="row" style="padding-top:40px; padding-left:0%; padding-right:0%; padding-bottom:20px;text-align:left;z-index:0;">
+			 <div class="large-6 medium-12 small-12 columns"> 
+	Albatross Travel was born partially from my desire to create a full responsive website on my own, and partially from my frustration at the confusing, cluttered user experience of many current travel-related sites. I designed the Albatross site to act as a search tool for vacations but also as a personalized content feed and trip-planning space if a user signs in.  <br/><br/>
+			 </div>
+	      
+			  <div class="large-6 medium-12 small-12 columns"> 
+					<p class="quickfacts">
+				>> Albatrosses can fly over 10,000 km at a time with minimal effort due to their streamlined wings, so the seabird is a fitting emblem for a company focused on travel and efficiency. The color scheme is designed to be simple and relaxing, but bright enough to stand out against photographic backgrounds. <br/><br/>
+	>> Although non-members would still be able to search trips and read blog posts, members are able to bookmark trips and posts and receive curated content specifically for their travel needs. <br/><br/>				
+			</p>
+			</div>
+		</div>
+	
+	
+   
+	
+	<div style="width:100%; padding-bottom:0px;">
+			<img src="img/project-alb-02.jpg">
+		</div>
+		<div style="width:100%; padding-bottom:0px;">
+				<img src="img/project-alb4.jpg">
+			</div>		
+	<div style="width:100%; padding-bottom:0px;">
+			<img src="img/alb-welcome.jpg">
+		</div>
+	<div style="width:100%; padding-bottom:0px;">
+			<img src="img/project-alb1.jpg">
+		</div>	
+<div style="width:50%; padding-bottom:0px; float: left; padding-left:3%;">
+		<img src="img/alb-home.jpg">
+	</div>
+
+<div style="width:50%; padding-bottom:0px; float:right; padding-right:3%">
+		<img src="img/alb-search.jpg">
+	</div>
+	
+<div style="width:100%; padding-bottom:0px;">
+		<img src="img/alb-trip.jpg">
+	</div>	
+	
+<div style="width:100%; padding-top:0px;">
+					<img src="img/ipad.jpg">
+	</div>
+			
+ <div style="width:100%; padding-bottom:0px;">
+ 		<img src="img/alb-map.jpg">
+ 	</div>				
+<div style="width:100%;">
+			
+<a href="gallery.html"> 
+	<div class="foot" style="width:50%; height:200px; float:left; margin-top:0px; z-index:0; background-image:url(img/footer-event.jpg); background-repeat:no-repeat; background-size:cover;">
+			<div class="large-12 columns" style="z-index:1;text-align:center;float:center; margin-top:80px;"><p class="italictext">previous<br/></p><h6 style="color:#FFFFFF;"> GALLERY EVENTS</h6> 
+			</div>
+	</div>
+</a>
+
+<a href="idea.html">
+	<div class="foot" style="width:50%; height:200px; float:left; margin-top:0px; z-index:0; background-image:url(img/footer-idea.jpg); background-repeat:no-repeat; background-size:cover;">
+			<div class="large-12 columns" style="z-index:1;text-align:center;float:center; margin-top:80px;"><p class="italictext">next<br/></p><h6 style="color:#FFFFFF;">THE IDEA CHALLENGE</h6> 
+			</div>
+	</div>
+</a>
+				
+</div>
+</div>							
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
