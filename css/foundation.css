@@ -78,10 +78,12 @@
     font-size: 1.8rem;
     background: #FFFFFF;
     margin-top: 40%;
+	line-height:120%;
     color: #000;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); }
   .overlay-slide-in-left p {
     opacity: 0;
+	line-height:120%;
 	text-align:center;
     color: #FFFFFF;
     transition: all 0.2s linear; }
@@ -108,52 +110,7 @@
     opacity: 1;
     transition-delay: 0.4s; }
 	
-	.overlay-fade-in-new-background .button {
-	  display: inline-block;
-	  text-decoration: none;
-	  padding: 7px 14px;
-	  background: #000;
-	  color: #fff;
-	  text-transform: uppercase;
-	  border-radius: 5px;
-	  box-shadow: 0 0 1px #000;
-	  position: relative;
-	  opacity: 0;
-	  transition: all 0.2s ease-in-out; }
-	  .overlay-fade-in-new-background .button:hover {
-	    box-shadow: 0 0 5px #fff;
-	    background-color: #222; }
-	.overlay-fade-in-new-background p {
-	  font-size: 28px; }
-	.overlay-fade-in-new-background 
-	.image-overlay-content {
-	  opacity: 0;
-	  transition: all 0.4s ease-in-out; }
-	.overlay-fade-in-new-background h2 {
-	  color: #000;
-	  font-size: 1.6rem;
-	  margin-top: 30%;
-	  opacity: 0;
-	  transition: all 0.2s ease-in-out; }
-	.overlay-fade-in-new-background p {
-	  opacity: 0;
-	  transition: all 0.2s linear; }
-	.overlay-fade-in-new-background img {
-	  transition: all 0.2s ease-in-out; }
-	.overlay-fade-in-new-background:hover img {
-	  opacity: 0;}
-	.overlay-fade-in-new-background:hover .image-overlay-content {
-	  opacity: 1;
-  	 background:#957f3c;}
-	.overlay-fade-in-new-background:hover h2, .overlay-fade-in-new-background p, .overlay-fade-in-new-background .button {
-	  opacity: 1; }
-	.overlay-fade-in-new-background:hover p {
-	  transition-delay: 0.1s; }
-	.overlay-fade-in-new-background:hover .button {
-	  transition-delay: 0.2s; }
-	  
-
-	
+	  	
 	.logo {
 	  border-radius: 50%;
 	  -webkit-transition: -webkit-transform 1s ease-in-out;
