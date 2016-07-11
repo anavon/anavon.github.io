@@ -1,0 +1,399 @@
+ <!-- FlatFy Theme - Andrea Galanti /-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Albatross Travel">
+    <meta name="author" content="">
+
+    <title>Albatross Travel</title>
+
+	
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+<link href="css/general.css" rel="stylesheet">
+
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/magnific-popup.css"> 
+ 
+<script src="js/modernizr-2.8.3.min.js"></script>
+
+        <style type="text/css">
+            /* Set a size for our map container, the Google Map will take up 100% of this container */
+            #map {
+                width: 100%;
+                height: 300px;
+            }
+        </style>
+ 
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH_aRaXjYXRXlW_AAYqJaE-4FH-s2uKTE"></script>		
+		
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(44.977753, -93.265011), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(44.977753, -93.265011),
+                    map: map,
+                    title: 'ALBATROSS TRAVEL'
+                });
+            }
+        </script>					
+</head>
+
+<body id="home">
+
+			
+	<!-- FullScreen -->
+     <div class="intro-header" style="background-image:url(img/intro5.jpg); background-repeat:no-repeat; background-size:cover;">
+ 		<div class="col-xs-12 text-center abcen1">
+ 			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s"><br/><br/>EXPLORE YOUR WORLD, YOUR WAY</h1>
+			
+ 			<ul class="list-inline intro-social-buttons">
+ 				<li id="download" ><a href="#downloadlink" class="btn  btn-lg mybutton_white wow fadeIn" data-wow-delay="0.8s"><span class="network-name">SEARCH VACATIONS</span></a>
+ 				</li>
+ 			</ul>
+ 		</div>    
+         <!-- /.container -->
+ 		<div class="col-xs-12 text-center abcen wow fadeIn">
+ 			<div class="button_down"> 
+ 				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <i class="fa fa-angle-down fa-4x" style="color:#FFFFFF"> </i></a>
+ 			</div>
+ 		</div>
+     </div>
+
+	
+<!-- NavBar-->
+		<nav class="navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>     
+					<a href="#home">
+		                     <img class="img-responsive" src="img/logo-11.png" alt="">
+					</a></div>
+
+					<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+					
+						<li class="menuItem"><a href="#whatis">HOME</a></li>
+						<li class="menuItem"><a href="#useit">VACATIONS</a></li>
+						<li class="menuItem"><a href="#screen">BLOG</a></li>
+						<li class="menuItem"><a href="#credits">CONTACT US</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+ 	<!-- Trips -->
+ 	<div id="whatis" class="content-section-b" style="border-top: 0">
+ 		<div class="container">
+
+ 			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+ 				<h3>RECOMMENDED TRIPS</h3>
+ 				<p class="lead" style="margin-top:0">&nbsp</p>
+				
+ 			</div>
+			
+ 			<div class="row">
+			
+ 				<div class="col-sm-4 wow fadeInDown text-center">
+ 				 <a class="trip" href="#"><img class="img-responsive " src="img/caribbean.jpg" alt=""><br/>
+ 				  <h4>CARIBBEAN GETAWAY</h4>
+ 				  <p class="lead">7 nights from $499 </p><p>
+Starting in Miami and touring through Falmouth, Georgetown, Cozumel, and Nassau, this cruise lets you travel the Caribbean in comfort.</p></a>
+
+ 				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+ 				</div><!-- /.col-lg-4 -->
+				
+ 				<div class="col-sm-4 wow fadeInDown text-center">
+ 				 <a class="trip" href="#"><img class="img-responsive " src="img/italy.jpg" alt=""><br/>
+ 				  <h4>EXPLORE ITALY</h4>
+ 				  <p class="lead">9 nights from $2,695 + Air </p><p>
+Beginning in Rome and following the Italian Riviera to Volterra, Lucca and Florence, this all-inclusive tour takes you through the historic heart of Italy.</p></a>
+
+ 				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+ 				</div><!-- /.col-lg-4 -->
+				
+ 				<div class="col-sm-4 wow fadeInDown text-center">
+ 				 <a class="trip" href="#"><img class="img-responsive " src="img/sf.jpg" alt=""><br/>
+ 				  <h4>COVA SAN FRANCISCO</h4>
+ 				  <p class="lead">4 nights from $719 </p><p>
+Staying at the Cova Hotel, the possibilities are endless: revisiting history at Alcatraz or Golden Gate Bridge, shopping at Pier 39, or hiking in nearby Muir Woods.</p></a>
+
+ 				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+ 				</div><!-- /.col-lg-4 -->
+				
+ 			</div><!-- /.row -->
+
+<p style="text-align:center"><a class="btn btn-lg mybutton_cyano wow fadeIn" href="#" role="button">VIEW MORE DESTINATIONS</a></p> 		
+ 			
+ 		</div>
+ 	</div>
+	
+ 	<!-- Use it -->
+     <div id ="useit" class="content-section-a">
+ 		<div class="container">
+
+ 			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+ 				<h3>RECENT BLOG POSTS</h3>
+ 				<p class="lead" style="margin-top:0">&nbsp</p>
+				
+ 			</div>
+			
+ 			<div class="row">
+			
+ 				<div class="col-sm-4 wow fadeInDown text-center">
+ 				 <a class="trip" href="#"><img class="img-responsive " src="img/beach.jpg" alt=""><br/>
+ 				  <h4>BEACH THERAPY</h4>
+ 				  <p class="lead">July 7, 2016</p><p>
+Can vacations actually improve workplace productivity? We take a look at how time away can actually benefit your body and mind in the long term and short term.</p></a>
+
+ 				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+ 				</div><!-- /.col-lg-4 -->
+				
+ 				<div class="col-sm-4 wow fadeInDown text-center">
+ 				 <a class="trip" href="#"><img class="img-responsive " src="img/food.jpg" alt=""><br/>
+ 				  <h4>FOOD FLIGHT</h4>
+ 				  <p class="lead">July 1, 2016</p><p>
+Our top picks for culinary getaways, from the exotic spices of India to the specialty wine and cheese of Italy.</p></a>
+
+ 				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+ 				</div><!-- /.col-lg-4 -->
+				
+ 				<div class="col-sm-4 wow fadeInDown text-center">
+ 				 <a class="trip" href="#"><img class="img-responsive " src="img/camera.jpg" alt=""><br/>
+ 				  <h4>PICTURE PERFECT</h4>
+ 				  <p class="lead">June 23, 2016</p><p>
+How to capture that perfect vacation snap. Plus, how to get your travel photos featured on our site!</p></a>
+
+ 				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+ 				</div><!-- /.col-lg-4 -->
+				
+ 			</div><!-- /.row -->
+
+<p style="text-align:center"><a class="btn btn-lg mybutton_cyano wow fadeIn" href="#" role="button">VIEW ALL POSTS</a></p> 		
+ 			
+ 		</div>
+         <!-- /.container -->
+     </div>
+
+ 	<!-- Screenshot -->
+<div id="screen" class="content-section-b">
+  <div class="container">
+   <div class="row" >
+ 	<div class="col-md-6 col-md-offset-3 text-center wrap_title ">
+ 				<h3>ADVENTURERS' PHOTO GALLERY</h3>
+ 				<p class="lead" style="margin-top:0">Send us your favorite vacation snapshots and they could be featured here.</p><br/>
+				<p style="text-align:center"><a class="btn btn-lg mybutton_cyano wow fadeIn" href="#" role="button">SUBMIT PHOTO</a></p> 
+ 	</div>
+  </div>
+ 	  <div class="row wow bounceInUp" >
+        <div id="owl-demo" class="owl-carousel">
+				
+ 				<a href="img/foto-1.jpg" class="image-link">
+ 					<div class="item">
+ 						<img  class="img-responsive img-rounded" src="img/foto-1.jpg" alt="Owl Image">
+ 					</div>
+ 				</a>
+				
+ 				<a href="img/foto-5.jpg" class="image-link">
+ 					<div class="item">
+ 						<img  class="img-responsive img-rounded" src="img/foto-5.jpg" alt="Owl Image">
+ 					</div>
+ 				</a>
+				
+                <a href="img/foto-6.jpg" class="image-link">
+ 					<div class="item">
+ 						<img  class="img-responsive img-rounded" src="img/foto-6.jpg" alt="Owl Image">
+ 					</div>
+ 				</a>
+				
+ 				<a href="img/foto-3.jpg" class="image-link">
+ 					<div class="item">
+ 						<img  class="img-responsive img-rounded" src="img/foto-3.jpg" alt="Owl Image">
+ 					</div>
+ 				</a>
+				
+ 				<a href="img/foto-4.jpg" class="image-link">
+ 					<div class="item">
+ 						<img  class="img-responsive img-rounded" src="img/foto-4.jpg" alt="Owl Image">
+ 					</div>
+ 				</a>
+				
+                <a href="img/foto-2.jpg" class="image-link">
+ 					<div class="item">
+ 						<img  class="img-responsive img-rounded" src="img/foto-2.jpg" alt="Owl Image">
+ 					</div>
+ 				</a>
+              </div>       
+          </div>
+        </div>
+
+
+	</div>
+	
+				
+						<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
+							<button type="button "><span></span></button></div>
+
+
+ 	<!-- Banner Download -->
+ 	<div id="downloadlink" class="banner">
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="col-md-8 col-md-offset-2 text-center wrap_title">
+ 				<h2 style="font-weight:100">SIGN UP FOR OUR NEWSLETTER</h2>
+ 				<p class="lead" style="margin-top:0">Receive discounts on tours, read our latest blog posts, and stay in touch with the Albatross Community</p><br/>
+ 				<p><a class="btn btn-lg mybutton_white wow fadeIn" role="button">SIGN UP</a></p> 
+ 			 </div>
+ 			</div>
+ 		</div>
+ 	</div>
+	
+ 	<!-- Contact -->
+ 	<div id="contact" class="content-section-c">
+ 		<div class="container">
+ 			<div class="row">
+			
+ 			<div class="col-md-8 col-md-offset-2 text-center wrap_title">
+ 				<h3>MAKE US YOUR FIRST DESTINATION</h3>
+ 			</div>
+			
+ 			<form role="form" action="" method="post" >
+ 				<div class="col-md-6">
+ 					<div class="form-group">
+ 						<label for="InputName">Your Name</label>
+ 						<div class="input-group">
+ 							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+ 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+ 						</div>
+ 					</div>
+					
+ 					<div class="form-group">
+ 						<label for="InputEmail">Your Email</label>
+ 						<div class="input-group">
+ 							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+ 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+ 						</div>
+ 					</div>
+					
+ 					<div class="form-group">
+ 						<label for="InputMessage">Message</label>
+ 						<div class="input-group">
+ 							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+ 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+ 						</div>
+ 					</div>
+
+ 					<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-lg mybutton_white wow fadeIn">
+ 				</div>
+ 			</form>
+			
+ 				<div class="col-md-5 col-md-push-1 address">
+ 					<address>
+ 					ALBATROSS TRAVEL<br/>
+					111 N 1st Ave<br/> 
+					Minneapolis, MN 55414<br/>
+					(612) 812 8334<br/><br/>
+					GENERAL QUESTIONS<br/>
+					info@albatrosstravel.com<br/><br/>
+					LIVE CHAT<br/>
+					Speak with an agent for specific questions.
+ 					</address>
+
+ 					<li class="social"> 
+ 					<a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
+ 					<a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
+ 					<a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
+ 					<a href="#"><i class="fa fa-instagram fa-size"> </i> </a>
+ 					</li>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+	
+<div id=map></div>	
+	
+     <footer>
+       <div class="container">
+         <div class="row">
+           <div class="col-md-7">
+             <p><i class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></i>2016 Albatross &nbsp &nbsp &nbsp &nbsp
+				 <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
+ 					<a href="#"><i class="fa fa-twitter-square fa-size"> </i> </a> 
+ 					<a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
+ 					<a href="#"><i class="fa fa-instagram fa-size"> </i> </a>&nbsp &nbsp &nbsp &nbsp
+               +1 (612) 812 8334
+             </p>
+           </div> <!-- /col-xs-7 -->
+		  </div>  
+         </div>
+      </div>
+     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/script.js"></script>
+	<!-- StikyMenu -->
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+		  
+		});
+	  });
+	
+	</script>
+	<!-- Smoothscroll -->
+	<script type="text/javascript" src="js/jquery.corner.js"></script> 
+	<script src="js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
+	</script>
+	<script src="js/classie.js"></script>
+	<script src="js/uiMorphingButton_inflow.js"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-popup.js"></script> 
+</body>
+
+</html>
+
