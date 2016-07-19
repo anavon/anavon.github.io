@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+     <meta charset="utf-8" />
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Ana von Huben</title>
+     <link rel="stylesheet" href="css/foundation.css" />
+     <link rel="stylesheet" href="css/app.css" />
+ 	<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+ 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700italic' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">		
+<link rel="icon" 
+      type="image/png" 
+      href="img/favicon-04.png">		
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	
+ <script>
+ 	var didScroll;
+ 	var lastScrollTop = 0;
+ 	var delta = 5;
+ 	var navbarHeight = $('header').outerHeight();
+
+ 	$(window).scroll(function(event){
+ 	    didScroll = true;
+ 	});
+
+ 	setInterval(function() {
+ 	    if (didScroll) {
+ 	        hasScrolled();
+ 	        didScroll = false;
+ 	    }
+ 	}, 250);
+
+ 	function hasScrolled() {
+ 	    var st = $(this).scrollTop();
+    
+ 	    // Make sure they scroll more than delta
+ 	    if(Math.abs(lastScrollTop - st) <= delta)
+ 	        return;
+    
+ 	    // If they scrolled down and are past the navbar, add class .nav-up.
+ 	    // This is necessary so you never see what is "behind" the navbar.
+ 	    if (st > lastScrollTop && st > navbarHeight){
+ 	        // Scroll Down
+ 	        $('header').removeClass('nav-down').addClass('nav-up');
+ 	    } else {
+ 	        // Scroll Up
+ 	        if(st + $(window).height() < $(document).height()) {
+ 	            $('header').removeClass('nav-up').addClass('nav-down');
+ 	        }
+ 	    }
+    
+ 	    lastScrollTop = st;
+ 	}
+ 	</script>
+
+ 	<script>
+ 	$(function() {
+   $('a[href*="#"]:not([href="#"])').click(function() {
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+       if (target.length) {
+         $('html, body').animate({
+           scrollTop: target.offset().top
+         }, 1000);
+         return false;
+       }
+     }
+   });
+ });
+ </script>
+   </head>
+
+<body>
+	<header class="nav-down">	
+		<div class="box fade-in three"> 
+			<div style="padding:10px; border:solid; border-color:#957f3c;"><a href="index.html"><img class="logo" src="img/analogo-03.png"> </a> 
+			</div>
+		   <a href="index.html#work" style="font-size: 10pt;
+		     	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
+		     	letter-spacing: 2px;">
+				<div class="navlink">WORK</a>
+	  	  	  	</div>
+		  <a href="index.html#contact" style="font-size: 10pt;
+		  	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
+		  	letter-spacing: 2px;">
+			<div class="navlink">ABOUT</a>
+		   	</div>
+		</div>
+	</header>
+
+<div class="box fade-in one" style="width:100%; height:75%; padding-top:0px; z-index:0; background-image:url(img/lund-head-02.png); background-position: center; background-repeat:no-repeat; background-size:cover;">
+</div>	
+
+<div class="box fade-in one"style="width:100%; padding-bottom:0px; background-color:#FFFFFFF">
+	<div class="row" style="padding-top:50px; padding-bottom:0px; text-align:center;">
+	<h1 style="line-height:120%"> LUNDBERG FAMILY FARMS </h1> <p/>
+	 		  <p class="italictext" style="font-size:120%; line-height:120%; padding-top:5px;"><br/>digital campaign, illustration</p><br/><p><img src="img/pin-03.png" style="width:40px"></p>
+	</div>	
+</div>
+
+				
+<div class="box fade-in one"> 
+		
+	<div class="row" style="padding-top:40px; padding-left:0%; padding-right:0%; padding-bottom:20px;text-align:left;z-index:0;">
+		 <div class="large-6 medium-12 small-12 columns"> 
+	 	  	For their summer 2016 campaign, organic grain company Lundberg Family Farms wanted to show the benefit of eating whole grains in a fresh, funny, and digital-savvy way. The solution? Silly, shareable illustrations of what happens when a person is "undergrained", digital ads (including special videos from YouTube star Anna Akana), and an interactive site. With the team at Haberman, I created digital materials and original illustrations to bring this campaign to life.<br/><br/><a href="http://www.beagrainiac.com/" target="blank">beagrainiac.com</a>
+		 </div>
+	      
+		  <div class="large-6 medium-12 small-12 columns"> 
+				<p class="quickfacts">
+				» This campaign was specifically aimed at a younger audience who is just starting to pay attention to cooking and eating healthily, and want accessible information on how to do so. <br/><br/>
+			» For the illustrations, I mixed flat colors and geometric shapes with hand-drawn elements for a fun, bright aesthetic that fit with the rest of the campaign  <br/><br/>
+		
+		</p>
+		</div>
+	</div>
+
+<div style="width:100%; margin-bottom:30px;">
+		<img src="img/Lund-mock.jpg">
+</div>
+
+<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<img src="img/Lundberg_coffee.gif">
+</div>
+<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<img src="img/Lundberg_mom.gif">
+</div>
+<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
+		<img src="img/Lundberg_salt.gif">
+</div>
+
+<div style="width:100%; margin-bottom:0%;">
+		<img src="img/lund.png">
+</div>
+
+<div style="width:100%; padding-bottom:0px; background-color:#FFFFFF">
+	<div class="row" style="padding-top:100px; padding-bottom:50px; text-align:center;line-height:120%;">
+	<h4>SOCIAL + DIGITAL EXTENSION</h4><p><br/>Campaign included social media and digital advertising, including targeting placements for Pandora and Spotify.
+	</div>	
+</div>
+
+<div style="width:80%; margin-bottom:0%; margin-right:12%; margin-left:12%">
+		<img src="img/lund-fb.jpg">
+</div>
+
+<div style="width:100%; margin-bottom:0%;">
+		<img src="img/lund-ad1.jpg">
+</div>
+
+<div style="width:100%; margin-bottom:0%;">
+		<img src="img/lund-ad2.jpg">
+</div>
+
+<div style="width:100%; margin-bottom:0%;">
+		<img src="img/lund-ad3.jpg">
+</div>
+
+<div style="width:100%;">
+			
+<a href="alb.html">
+	<div class="foot" style="width:50%; height:200px; float:left; margin-top:0px; z-index:0; background-image:url(img/footer-alb.jpg); background-repeat:no-repeat; background-size:cover;">
+			<div class="large-12 columns" style="z-index:1;text-align:center;float:center; margin-top:80px;"><p class="italictext">previous<br/></p><h6 style="color:#FFFFFF;"> ALBATROSS TRAVEL</h6> 
+			</div>
+	</div>
+</a>
+
+<a href="winwood.html">
+	<div class="foot" style="width:50%; height:200px; float:left; margin-top:0px; z-index:0; background-image:url(img/footer-win.jpg); background-repeat:no-repeat; background-size:cover;">
+			<div class="large-12 columns" style="z-index:1;text-align:center;float:center; margin-top:80px;"><p class="italictext">next<br/></p><h6 style="color:#FFFFFF;">WINWOOD PROPERTIES</h6> 
+			</div>
+	</div>
+</a>
+				
+</div>
+</div>							
+
+			
+<br/> <br/> 
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
