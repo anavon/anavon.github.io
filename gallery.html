@@ -1,186 +1,281 @@
-<!doctype html>
-<html class="no-js" lang="en">
-   <head>
-     <meta charset="utf-8" />
-     <meta http-equiv="x-ua-compatible" content="ie=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Ana von Huben</title>
-     <link rel="stylesheet" href="css/foundation.css" />
-     <link rel="stylesheet" href="css/app.css" />
- 	<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
- 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700italic' rel='stylesheet' type='text/css'>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">		
-<link rel="icon" 
-      type="image/png" 
-      href="img/favicon-04.png">		
- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	
- <script>
- 	var didScroll;
- 	var lastScrollTop = 0;
- 	var delta = 5;
- 	var navbarHeight = $('header').outerHeight();
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
- 	$(window).scroll(function(event){
- 	    didScroll = true;
- 	});
+    <title>Gallery Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+	<link rel="icon" type="image/ico" href="images/favicon.png" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+	<script src="https://use.fontawesome.com/9107e7771c.js"></script>   
+ 
 
- 	setInterval(function() {
- 	    if (didScroll) {
- 	        hasScrolled();
- 	        didScroll = false;
- 	    }
- 	}, 250);
-
- 	function hasScrolled() {
- 	    var st = $(this).scrollTop();
+</head>
     
- 	    // Make sure they scroll more than delta
- 	    if(Math.abs(lastScrollTop - st) <= delta)
- 	        return;
-    
- 	    // If they scrolled down and are past the navbar, add class .nav-up.
- 	    // This is necessary so you never see what is "behind" the navbar.
- 	    if (st > lastScrollTop && st > navbarHeight){
- 	        // Scroll Down
- 	        $('header').removeClass('nav-down').addClass('nav-up');
- 	    } else {
- 	        // Scroll Up
- 	        if(st + $(window).height() < $(document).height()) {
- 	            $('header').removeClass('nav-up').addClass('nav-down');
- 	        }
- 	    }
-    
- 	    lastScrollTop = st;
- 	}
- 	</script>
 
- 	<script>
- 	$(function() {
-   $('a[href*="#"]:not([href="#"])').click(function() {
-     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-       var target = $(this.hash);
-       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-       if (target.length) {
-         $('html, body').animate({
-           scrollTop: target.offset().top
-         }, 1000);
-         return false;
-       }
-     }
-   });
- });
- </script>
-   </head>
 
 <body>
-	<header class="nav-down">	
-		<div class="box fade-in three"> 
-			<div style="padding:10px; border:solid; border-color:#957f3c;"><a href="index.html"><img class="logo" src="img/analogo-03.png"> </a> 
-			</div>
-		   <a href="index.html#work" style="font-size: 10pt;
-		     	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
-		     	letter-spacing: 2px;">
-				<div class="navlink">WORK</a>
-	  	  	  	</div>
-		  <a href="index.html#contact" style="font-size: 10pt;
-		  	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
-		  	letter-spacing: 2px;">
-			<div class="navlink">ABOUT</a>
-		   	</div>
-		</div>
-	</header> 
-	
-<div class="box fade-in one" style="width:100%; height:75%; padding-top:0px; z-index:0; background-image:url(img/project-gallery1.jpg);background-repeat:no-repeat; background-size:cover; background-position:center;">
-</div>	
-
-<div class="box fade-in one"style="width:100%; padding-bottom:0px; background-color:#FFFFFFF">
-	<div class="row" style="padding-top:50px; padding-bottom:0px; text-align:center;">
-	<h1 style="line-height:120%"> GALLERY EVENTS </h1> <p/>
-	 		  <p class="italictext" style="font-size:120%; line-height:120%; padding-top:5px;"><br/>poster design, social media</p><br/><p><img src="img/pin-03.png" style="width:40px"></p>
-	</div>	
-</div>
+    
+    <div class="clapat-mask"><div id="clapatloader"></div></div>
 
 
+
+
+    <!-- Header -->
+    <header class="first-load">
+    
+                            
+        <!-- Header Wrapper -->                    
+        <div id="header-wrapper">
+        
+        
+        
+        	<!-- Logo-->
+            <div class="logo">
+            	<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+        	<!--/Logo-->
+            
+            
+            
+            <!-- Menu Button-->
+            <a class="btn_menu clapat-menubtn">
+                <span class="btn_menu_line"></span>
+                <span class="btn_menu_line"></span>
+                <span class="btn_menu_line"></span>
+            </a>
+            <!--/Menu Button-->
+            
+            
+            
+            <!-- Secondary Menu-->
+            <div id="secondary-menu" class="hide-secondary">
+                
+                <ul class="menu">
+                </ul>
+                
+            </div>
+            <!--/Secondary Menu-->
+            
+            
+            
+           <!-- Overlay Menu-->
+           <nav class="clapat-overlay-menu">
+                   
+               <div class="clapat-menu-container">
+                       
+                   <div class="outer">
+                       <div class="inner">
+                       
+                       
+                           <div class="scr_menu">
+                           
+                               <div class="outer">
+                                   <div class="inner text-align-center">
+                               
+                                       <ul class="categories">
+                                       
+                                           <li class="menu-item dropdown"><a class="is-active no-action" href="">portfolio</a>
+                                       	<ul class="submenu">
+                                           	<li><a href="biggame.html">amazon big game</a></li>   
+											<li><a href="we.html">world endeavors</a></li>   
+											<li><a href="nota.html">nota</a></li>                         
+                                               <li><a href="gallery.html">gallery events</a></li>
+											<li><a href="pi.html">life of pi</a></li>
+											<li><a href="alb.html">albatross travel</a></li>
+											<li><a href="jolt.html">jolt texas</a></li>
+											<li><a href="lund.html">lundberg family farms</a></li>
+											<li><a href="etc.html">etc.</a></li>
+											                       
+                                           </ul>	
+											
+                                           
+                                           </li>
+                                           
+                                           <li class="menu-item"><a href="index.html#about">about</a></li>
+                                           </li>
+
+                                       </ul>
+                               
+                                   </div>
+                               </div>
+                               
+                           </div>
+                           
+                           
+                       </div>
+                   </div>
+                    
+                    
+                    
+	                       <a class="clapat-menuclosebtn">
+	                       	<div class="closebtn-rotate">
+	                               <span class="btn_menu_line"></span>
+	                               <span class="btn_menu_line"></span>
+	                           </div>
+	               		</a>
+                    
+	                       <p class="menu-copyright">2017 &copy; Ana von Huben </p>
+
+                       
+	                   </div>
+                
+                
+	                   <div class="clapat-menubg"><div class="clapat-menubg-overlay"></div></div>
+                
+                
+	               </nav>
+	               <!--/Overlay Menu-->
+            
+            
+            
+        </div>
+        <!--/Header Wrapper -->
+        	
+        
+        
+    
+    </header>
+    <!--/Header -->
+
+
+	<!-- Content -->
+    <div id="content">
+    <div id="content-ajax">
+        
+        
+        <!-- Hero --> 
+        <div id="hero" class="hero-big static-hero opacity-hero">
+        
+        	<div class="hero-image" style="background-image:url(images/portfolio-big/gallery_7.jpg)">
+            	<div class="overlay" style="background-color:rgba(0,0,0,0.0.1)">
+                    <!-- Slide Caption -->
+                    <div class="clapat-caption">
+                        <div class="caption-content bottom-left">                        	                            
+                        </div>
+                    </div>
+                    <!--/Slide Caption -->
+                </div>
+            </div>
+        
+        </div>
+        <!--/Hero --> 
+        
+        
+        <!-- Main --> 
+        <div id="main">
+            
+            <!-- Container -->    
+           	<div class="container">
+            	
+                <div class="one_half">
+            		<h3 class="title-has-line">gallery events</h3>
+                    <p class="monospace">poster design<br>social media<br>photoshoot direction</p>
+                </div>
+                
+                <div class="one_half last">
+            		<p>These three pieces were created to promote different art events at the Foster Gallery in Eau Claire, WI. Each printed poster was accompanied by a social media and digital campaign. </p>
+                </div>
 				
-<div class="box fade-in one"> 
-		
-	<div class="row" style="padding-top:40px; padding-left:0%; padding-right:0%; padding-bottom:20px;text-align:left;z-index:0;">
-		 <div class="large-6 medium-12 small-12 columns"> 
-	These three pieces were created for different art events in the Eau Claire area, and all of them included printed posters as well as social media posts. <br/><br/>
-		 </div>
-	      
-		  <div class="large-6 medium-12 small-12 columns"> 
-				<p class="quickfacts">
-				>> After adding a social campaign (Facebook, Instagram, and Twitter) to the usual print campaign for NOTA submissions, the increase in turnout from the last submissions was huge, with over 40% more people submitting and even more showing up to vote on artwork. <br/><br/>
-				>> To create the posters shown, I used many kinds of digital collage elements, including found photography, studio photography, and hand lettering. <br/><br/>
-		</p>
-		</div>
-	</div>
-		
-<div style="width:100%; padding-bottom:0px; background-color:#dfe2e7">
-	<div class="row" style="padding-top:100px; padding-bottom:50px; text-align:center; color:#474644;">
-	<h4 style="line-height:120%;">WISCONSIN ARTSWEST</h4><em><br/>2014</em>
-	</div>	
-</div>		
-
-<div style="width:100%; padding-bottom:0px;">
-		<img src="img/artswest-03.jpg">
-	</div>
-			
-<div style="width:100%; padding-bottom:0px;">
-		<img src="img/ArtsWestFramed.jpg">
-	</div>
-	
-<div style="width:100%; margin-bottom:0%; background-color:#dddddd">
-	<div class="row" style="padding-top:100px; padding-bottom:50px; text-align:center; color:#474644;">
-	<h4 style="line-height:120%;">BFA SENIOR SHOW</h4><em><br/>2015</em>
-	</div>	
-</div>
-		
-<div style="width:100%; padding-top:0px;">
-				<img src="img/project-gallery4.jpg">
-			</div>
-<div style="width:100%; padding-top:0px;">
-				<img src="img/bfa.png">
-			</div>
-								
-<div style="width:100%; margin-bottom:0%; background-color:#fdc338">
-	<div class="row" style="padding-top:100px; padding-bottom:50px; text-align:center; color:#FFFFFF;">
-	<h4 style="line-height:120%;">NOTA SUBMISSIONS</h4><em><br/>2015</em><br/>Created in collaboration with Bryce Kunkel, Cheryl Peick, and Zachary Oliphant.
-	</div>	
-</div>				
-
-<div style="width:100%; padding-top:0px;">
-						<img src="img/submissions-01.jpg">
+  </div>              
+                <hr class"small">
+				
+				<div class="subproject" style="background-color:#dfe2e7; color:#5a5b5f">
+					<div class="container">
+					<h4 class="text-align-center title-has-line">wisconsin artswest</h4> <p>Digital Collage, Typography</p>
 					</div>
-
-<div style="width:100%; padding-top:0px;">
-						<img src="img/project-gallery2.jpg">
+				</div>
+				
+                <img src="images/portfolio-big/gallery_1.jpg" style="width:100%" alt="image">
+			<br>&nbsp </br>
+				<img src="images/portfolio-big/gallery_2.jpg" style="width:100%" alt="image">
+			<br>&nbsp </br>
+				
+				<div class="subproject" style="background-color:#dddddd; color:#5a5b5f">
+					<div class="container">
+					<h4 class="text-align-center title-has-line">bfa senior show</h4> <p>Hand Lettering, Typography</p>
 					</div>
+				</div>
 				
-<div style="width:100%;">
+	            <img src="images/portfolio-big/gallery_4.jpg" style="width:100%" alt="image">
+			<br>&nbsp </br>
+	            <img src="images/portfolio-big/gallery_3.jpg" style="width:100%" alt="image">
+			<br>&nbsp </br>
+                
+   				<div class="subproject" style="background-color:#fcc40b; color:#5a5b5f">
+   					<div class="container">
+   					<h4 class="text-align-center title-has-line">nota submissions</h4><p>Photoshoot direction, digital collage, typography<br/>Created in collaboration with Bryce Kunkel, Cheryl Peick, and Zachary Oliphant.</p>
+   					</div>
+   				</div>
+				
+   	            <img src="images/portfolio-big/gallery_7.jpg" style="width:100%" alt="image">
+   			<br>&nbsp </br>
 			
-<a href="day.html">
-	<div class="foot" style="width:50%; height:200px; float:left; margin-top:0px; z-index:0; background-image:url(img/footer-day.jpg); background-repeat:no-repeat; background-size:cover;">
-			<div class="large-12 columns" style="z-index:1;text-align:center;float:center; margin-top:80px;"><p class="italictext">previous<br/></p><h6 style="color:#FFFFFF;"> DAIYA</h6> 
-			</div>
-	</div>
-</a>
+					<div style="width:49.333333%; float:left"><img src="images/portfolio-big/gallery_9.jpg" style="width:100%" alt="image">
+				</div>
+				<div style="width:49.333333%; float:right"><img src="images/portfolio-big/gallery_8.jpg" style="width:100%" alt="image">
+				</div>
+		
+			<hr class="small">
+			
+   	            <img src="images/portfolio-big/gallery_6.jpg" style="width:100%" alt="image">
+   			<br>&nbsp </br>
 
-<a href="alb.html">
-	<div class="foot" style="width:50%; height:200px; float:left; margin-top:0px; z-index:0; background-image:url(img/footer-alb.jpg); background-repeat:no-repeat; background-size:cover;">
-			<div class="large-12 columns" style="z-index:1;text-align:center;float:center; margin-top:80px;"><p class="italictext">next<br/></p><h6 style="color:#FFFFFF;">ALBATROSS TRAVEL</h6> 
-			</div>
-	</div>
-</a>
+			<div class="container">
 				
-</div>
-</div>							
+                <!-- Projects Navigation -->
+                <div class="projects-nav">
+                
+                	<a class="prev-project" href="nota.html">
+                    	<div class="buton-nav-content">
+                            <span class="name-prev-project">NOTA</span>
+                            <span class="text-prev-project">prev project</span>
+                        </div>
+                    </a>
+                    
+                    <a class="all-projects" href="index.html">Back to Works <span>...</span></a>
+                    
+                    <a class="next-project" href="pi.html">
+                    	<div class="buton-nav-content">
+                            <span class="name-next-project">life of pi</span>
+                            <span class="text-next-project">next project</span>
+                        </div>
+                    </a>
+                
+                </div>
+                <!--/Projects Navigation -->
+                
+                
+                
+            </div>       
+            <!--/Container -->
+            
+        </div>                
+        <!--/Main -->   
+		
+        
+        <!-- Scroll To Top -->
+        <div class="scrolltotop"><div class="top-arrow"></div></div>
+        <!--/Scroll To Top -->
+    
+    
+    </div></div><p class="monospace" style="text-align: center">2017 &copy; Ana von Huben</p>
+	<!--/Content -->
+  
+		
+	<script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="js/scripts.js"></script>	
 
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+
+
+
+</body>
+
 </html>
