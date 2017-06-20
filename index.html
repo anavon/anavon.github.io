@@ -1,281 +1,332 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Ana von Huben | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ana von Huben</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+	<link rel="icon" type="image/ico" href="images/favicon.png" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
-	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700italic' rel='stylesheet' type='text/css'>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-<link rel="icon" 
-      type="image/png" 
-      href="img/favicon-04.png">		
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	
-<script>
-	var didScroll;
-	var lastScrollTop = 0;
-	var delta = 5;
-	var navbarHeight = $('header').outerHeight();
-
-	$(window).scroll(function(event){
-	    didScroll = true;
-	});
-
-	setInterval(function() {
-	    if (didScroll) {
-	        hasScrolled();
-	        didScroll = false;
-	    }
-	}, 250);
-
-	function hasScrolled() {
-	    var st = $(this).scrollTop();
-    
-	    // Make sure they scroll more than delta
-	    if(Math.abs(lastScrollTop - st) <= delta)
-	        return;
-    
-	    // If they scrolled down and are past the navbar, add class .nav-up.
-	    // This is necessary so you never see what is "behind" the navbar.
-	    if (st > lastScrollTop && st > navbarHeight){
-	        // Scroll Down
-	        $('header').removeClass('nav-down').addClass('nav-up');
-	    } else {
-	        // Scroll Up
-	        if(st + $(window).height() < $(document).height()) {
-	            $('header').removeClass('nav-up').addClass('nav-down');
-	        }
-	    }
-    
-	    lastScrollTop = st;
-	}
-	</script>
-
-	<script>
-	$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
-  </head>
-  <!--<body style="background-image:url(img/coveridea5.jpg); padding-left:12%; padding-right:12%;">-->
-<body>
-	
-<header class="nav-down">	
-	<div class="box fade-in one"> 
-		<div style="padding:10px; border:solid; border-color:#957f3c;"><a href="index.html"><img class="logo" src="img/analogo-03.png"> </a> 
-		</div>
-	   <a href="#work" style="font-size: 10pt;
-	     	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
-	     	letter-spacing: 2px;">
-			<div class="navlink">WORK</a>
-  	  	  	</div>
-	  <a href="#contact" style="font-size: 10pt;
-	  	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
-	  	letter-spacing: 2px;">
-		<div class="navlink">ABOUT</a>
-	   	</div>
-	</div>
-</header>
-
-
-	<div class="row" style="padding-top:200px; text-align:center; color:#FFFFFF;">
-	<h1 style="letter-spacing:20px; line-height:1.5;">ANA VON HUBEN</h1><p style="color:#957f3c;font-size:22px"><em>portfolio</em>
-	</div>	
-
-	
-<a name="work"></a>&nbsp</br>&nbsp</br>&nbsp<br/>&nbsp
-    
-<div class="large-12 small-12" style="padding-top:0px; padding-left:15%; padding-right:15%; padding-bottom:10px;text-align:center; color:#121212; float:center"> 
-	        
-<a href="nota.html">
-<div class="box fade-in two">
-	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
-		<div class="image-wrapper overlay-slide-in-left">
-		 <img src="img/thumbnail-nota.jpg">
-		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">NOTA</h6>
-			<em>art direction, editorial, illustration</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
-			</div>
-		</div>
-	 </div>
-</div>
-</a>
-
-<a href="pi.html">
-<div class="box fade-in two">
-	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
-		<div class="image-wrapper overlay-slide-in-left">
-		 <img src="img/thumbnail-pi.jpg">
-		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">LIFE OF PI</h6>
-			<em>illustration, cover design</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
-			</div>
-		</div>
-	 </div>
-</div>
-</a>
-
-<a href="we.html">
-<div class="box fade-in two">
-	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
-		<div class="image-wrapper overlay-slide-in-left">
-		 <img src="img/thumbnail-we.jpg">
-		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">WORLD ENDEAVORS</h6>
-			<em>print campaign, editorial
-</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
-			</div>
-		</div>
-	 </div>
-</div>
-</a>
-
-         
-<a href="day.html">
-<div class="box fade-in two">
-	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
-		<div class="image-wrapper overlay-slide-in-left">
-		 <img src="img/Daiya_March17_Smoothie_FB.jpg">
-		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">DAIYA</h6>
-			<em>digital content marketing,<br/> html newsletter</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
-			</div>
-		</div>
-	 </div>
-</div>
-</a>
-
-<a href="gallery.html">
-<div class="box fade-in two">
-	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
-		<div class="image-wrapper overlay-slide-in-left">
-		 <img src="img/halfproject-gallery2.jpg">
-		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c; line-height:1">GALLERY EVENTS</h6>
-			<em>poster design, social media</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
-			</div>
-		</div>
-	 </div>
-</div>
-</a>
-
-<a href="alb.html">
-<div class="box fade-in two">
-	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
-		<div class="image-wrapper overlay-slide-in-left">
-		 <img src="img/thumbnail-alb.jpg">
-		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">ALBATROSS TRAVEL</h6>
-			<em>web design, branding</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
-			</div>
-		</div>
-	 </div>
-</div>
-</a>
-
-
-         
-<a href="lund.html">
-<div class="box fade-in two">
-	<div class= "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
-		<div class="image-wrapper overlay-slide-in-left">
-		 <img src="img/thumbnail-lund.jpg">
-		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">BE A GRAINIAC CAMPAIGN</h6>
-			<em>digital campaign, web design, illustration</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
-			</div>
-		</div>
-	 </div>
-</div>
-</a>
-
-<a href="winwood.html">
-<div class="box fade-in two">
-	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
-		<div class="image-wrapper overlay-slide-in-left">
-		 <img src="img/thumbnail-win.jpg">
-		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">WINWOOD PROPERTIES</h6>
-			<em>logo design, branding</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
-			</div>
-		</div>
-	 </div>
-</div>
-</a>
-
-<a href="idea.html">
-<div class="box fade-in two">
-	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
-		<div class="image-wrapper overlay-slide-in-left">
-		 <img src="img/thumbnail-idea.jpg">
-		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">THE IDEA CHALLENGE</h6>
-			<em>digital and print campaign, illustration</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
-			</div>
-		</div>
-	 </div>
-</div>
-</a>
-
-
-<a href="etc.html">
-<div class="box fade-in two">
-	<div class = "large-4 medium-4 small-12 column" style="padding-bottom:30px;">
-		<div class="image-wrapper overlay-slide-in-left">
-		 <img src="img/etc-03.jpg">
-		 	<div class="image-overlay-content" style="padding-top:30%"><h6 style="color:#957f3c">ETC.</h6>
-			<em>other illustration + branding</em><br/><p style="padding-right:53%; padding-left:40%; padding-top:2%;"><img src="img/pin-03.png"></p>
-			</div>
-		</div>
-	 </div>
-</div>
-</a>
-
-</div>	
-			
-<div class="row">	&nbsp </div>	
+	<script src="https://use.fontawesome.com/9107e7771c.js"></script>   
  
-<p/>
-<p/>
-  
-  
-  	        <!-- ... -->
-  	    </div>
-  	</div>
-	  
-	  
-<div class="box fade-in three"><a name="contact"> </a>
-	<div style="width:100%; text-align:left; color:#bdbdc6; background-color:#252429; padding-top: 50px; padding-bottom:50px;">
-	 		<div class="row">
-	         	<div class="large-12 columns" style="padding-left: 5%; padding-right:5%"><p>
-	         	   <h5 style="line-height:1.5">LET'S EXPLORE NEW IDEAS TOGETHER.</h5><br>
-	               <p> 
-I am a creative professional specializing in brand + identity development, illustration, and art direction for both traditional and screen based applications. Present and past clients and collaborators include Haberman, World Endeavors, Eau Claire Area Economic Development Corporation, NOTA Creative Culture Journal, Feed My People Food Bank, Volume One Magazine, Winwood Properties, and University of Wisconsin - Eau Claire.<p/>
-	 Email: ana.vonhuben@gmail.com 
-	 <br/><br/>
-	      
-  		<a href="resume.pdf" target="blank" style="font-size: 10pt;
-  	font-family: 'halis_grblack', Helvetica, Arial, sans-serif;
-  	letter-spacing: 2px;">
-					<div class="navlink" style="width:148px;">VIEW RESUME
-   				 	</div></a>
-	           </div>
-	 		  </div>
-	 	  </div>
-	  </div>
 
-	     <script src="js/vendor/jquery.min.js"></script>
-	     <script src="js/vendor/what-input.min.js"></script>
-	     <script src="js/foundation.min.js"></script>
-	     <script src="js/app.js"></script>
-	   </body>
-	 </html>
+</head>
+    
+
+
+
+
+
+
+<body>
+    
+    <div class="clapat-mask"><div id="clapatloader"></div></div>
+
+
+
+
+    <!-- Header -->
+    <header class="first-load">
+    
+                            
+        <!-- Header Wrapper -->                    
+        <div id="header-wrapper">
+        
+        
+        
+        	<!-- Logo-->
+            <div class="logo">
+            	<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+        	<!--/Logo-->
+	
+		
+            <!-- Menu Button-->
+            <a class="btn_menu clapat-menubtn">
+                <span class="btn_menu_line"></span>
+                <span class="btn_menu_line"></span>
+                <span class="btn_menu_line"></span>
+            </a>
+            <!--/Menu Button-->
+           
+            
+            
+            <!-- Overlay Menu-->
+            <nav class="clapat-overlay-menu">
+                    
+                <div class="clapat-menu-container">
+                        
+                    <div class="outer">
+                        <div class="inner">
+                        
+                        
+                            <div class="scr_menu">
+                            
+                                <div class="outer">
+                                    <div class="inner text-align-center">
+                                
+                                        <ul class="categories">
+                                        
+                                            <li class="menu-item dropdown"><a class="is-active no-action" href="">portfolio</a>
+                                        	<ul class="submenu">
+                                            	<li><a href="biggame.html">amazon big game</a></li>   
+												<li><a href="we.html">world endeavors</a></li>   
+												<li><a href="nota.html">nota</a></li>                         
+                                                <li><a href="gallery.html">gallery events</a></li>
+												<li><a href="pi.html">life of pi</a></li>
+												<li><a href="alb.html">albatross travel</a></li>
+												<li><a href="jolt.html">jolt texas</a></li>
+												<li><a href="lund.html">lundberg family farms</a></li>
+												<li><a href="etc.html">etc.</a></li>
+												                       
+                                            </ul>	
+												
+                                            
+                                            </li>
+                                            
+                                            <li class="menu-item"><a href="#about">about</a></li>
+                                            </li>
+
+                                        </ul>
+                                
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <a class="clapat-menuclosebtn">
+                    	<div class="closebtn-rotate">
+                            <span class="btn_menu_line"></span>
+                            <span class="btn_menu_line"></span>
+                        </div>
+            		</a>
+                    
+                    <p class="menu-copyright">2017 &copy; Ana von Huben </p>
+
+                       
+                </div>
+                
+                
+                <div class="clapat-menubg"><div class="clapat-menubg-overlay"></div></div>
+                
+                
+            </nav>
+            <!--/Overlay Menu-->
+            
+            
+            
+        </div>
+        <!--/Header Wrapper -->
+        
+        
+    
+    </header>
+    <!--/Header -->
+
+
+
+	<!-- Content -->
+    <div id="content">
+	<div id="content-ajax">
+    
+      <!-- Main --> 
+        <div id="main">
+            <div class="container">
+               
+				<h3 class= "title-has-line text-align-center"> this is the portfolio of <br/>ana von huben </h3>
+            <!-- Portfolio Filters --> 
+			
+		</div>
+            <ul id="filters" class="filters-hide">
+                <li><a id="all" href="#" data-filter="*" class="active">all</a></li>    
+                <li><a href="#" data-filter=".branding">branding</a></li>
+                <li><a href="#" data-filter=".design">design</a></li>
+                <li><a href="#" data-filter=".photography">photo</a></li>
+                <li><a href="#" data-filter=".web">web</a></li>
+            </ul>
+            <!--/Portfolio Filters -->
+            
+            
+            <div id="portfolio-wrap" class="">
+
+            
+                <div id="portfolio" class="auto-construct" data-col="2">
+                
+                
+                    <div class="item">
+                        <a href="biggame.html">
+                            <div class="item-content" style="background-image:url(images/portfolio-big/biggame_mock.jpg)"></div>
+                            <div class="item-overlay overlay-white">
+                                <span class="item-cat">BRANDING</span>                    
+                                <span class="item-title">amazon <br/>big game styleguide</span>
+                            </div>
+                        </a>     
+                    </div>
+                    
+                    <div class="item">
+                        <a href="we.html">
+                            <div class="item-content" style="background-image:url(images/portfolio-big/we_2.jpg)"></div>
+                            <div class="item-overlay overlay-white">
+                                <span class="item-cat">PRINT CAMPAIGN + EDITORIAL</span>                    
+                                <span class="item-title">world endeavors</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="item">
+                        <a href="nota.html">
+                            <div class="item-content" style="background-image:url(images/portfolio-big/banner_nota.jpg)"></div>
+                            <div class="item-overlay overlay-white">
+                                <span class="item-cat">EDITORIAL</span>                    
+                                <span class="item-title">nota creative culture publication</span>
+                            </div>
+                        </a>     
+                    </div>
+                    
+                    
+                    <div class="item tall photography">
+                        <a href="gallery.html">
+                            <div class="item-content" style="background-image:url(images/portfolio-big/posters.gif)"></div>
+                            <div class="item-overlay overlay-white">
+                                <span class="item-cat">EVENT PROMOTION</span>                    
+                                <span class="item-title">gallery events</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                     <div class="item tall photography">
+                        <a href="pi.html">
+                            <div class="item-content" style="background-image:url(images/portfolio-big/pi_1.jpg)"></div>
+                            <div class="item-overlay overlay-white">
+                                <span class="item-cat">ILLUSTRATION</span>                    
+                                <span class="item-title">life of pi</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    
+                      <div class="item design">
+                        <a href="alb.html">
+                            <div class="item-content" style="background-image:url(images/portfolio-big/alb_mock2.jpg)"></div>
+                            <div class="item-overlay overlay-white">
+                                <span class="item-cat">WEB DESIGN</span>                    
+                                <span class="item-title">albatross travel</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                   
+                    <div class="item branding">
+                        <a href="lund.html">
+                            <div class="item-content" style="background-image:url(images/portfolio-big/Lundberg_salt.gif)"></div>
+                            <div class="item-overlay overlay-white">
+                                <span class="item-cat">ILLUSTRATION + DIGITAL CAMPAIGN</span>                    
+                                <span class="item-title">lundberg family farms</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                 
+                     
+                     <div class="item tall photography">
+                        <a href="etc.html">
+                            <div class="item-content" style="background-image:url(images/portfolio-big/etc_donut.jpg)"></div>
+                            <div class="item-overlay overlay-white">
+                                <span class="item-cat">ILLUSTRATION + LOGO DESIGN</span>                    
+                                <span class="item-title">etc.</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    
+                    <div class="item web">
+                        <a href="jolt.html">
+                            <div class="item-content" style="background-image:url(images/portfolio-big/jolt_mock.jpg)"></div>
+                            <div class="item-overlay overlay-white">
+                                <span class="item-cat">WEB DESIGN</span>                    
+                                <span class="item-title">jolt texas</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                   
+                    
+                    
+                    
+         
+                
+                </div>
+            
+            </div>
+            
+            
+    
+        </div>
+        <!--/Main -->
+
+        
+        
+        
+        <!-- Scroll To Top -->
+        <div class="scrolltotop"><div class="top-arrow"></div></div>
+        <!--/Scroll To Top -->  
+        
+             
+            
+	</div>
+    </div>
+	<!--/Content -->
+<hr>
+<!-- Footer -->
+    <footer>
+    
+        <div id="footer-content">
+        
+        <a name="about"></a> 
+            <div class="container text-align-left"> 
+                <div class="two_third">
+                    <h3 class="title-has-line">about</h3><p>I am a creative professional and compulsive doodler who likes to color outside the lines and push boundaries to find the best possible solution. I enjoy creating informative, delightful experiences while learning from and collaborating with other creative minds. My experience includes brand + identity development, illustration, web design, and both print + digital advertising. </p>
+            <p>Email: ana.vonhuben@gmail.com</p><br/><br/><p> <a class="clapat-button outline-button" href="ana_resume.pdf" target="blank">RESUME</a></p><br/><br/><br/><br/>
+            <p class="monospace">2017 &copy; Ana von Huben</p>
+            
+                </div>
+
+            <div class="one_third last"> 
+            </div>
+        
+        </div>    
+    
+    </footer>
+    <!--/Footer -->
+    
+
+
+
+		
+	<script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="js/scripts.js"></script>	
+    
+
+
+
+
+</body>
+
+</html>
