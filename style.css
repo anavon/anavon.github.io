@@ -44,7 +44,7 @@
 	html,body{
 		font-family:Verdana, Geneva, sans-serif;
 		font-weight: 400;
-		font-size:12px;
+		font-size:16px;
 		height:100%;
 		width:100%;
 		color:#999;
@@ -120,7 +120,7 @@
 	samp,
 	pre {
 		font-family: monospace, serif;
-		font-size: 15px;
+		font-size: 16px;
 		-webkit-hyphens: none;
 		-moz-hyphens:    none;
 		-ms-hyphens:     none;
@@ -516,7 +516,7 @@
 	}
 	
 	p {
-		font-size:12px;
+		font-size:14px;
 		margin-bottom:20px;
 		line-height:25px;
 	}
